@@ -1,0 +1,12 @@
+name: CI Pipeline
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet
+        run: echo "Hello from the CI Pipeline!"
